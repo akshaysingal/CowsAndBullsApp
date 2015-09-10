@@ -1,0 +1,11 @@
+package com.example.cowsbulls;
+
+import android.app.Activity;
+import android.os.Bundle;
+
+public class HighScores extends Activity {
+	@Override
+	public void onCreate(Bundle savedBundleInstance){
+		setContentView(R.layout.high_scores);
+	}
+}

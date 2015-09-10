@@ -1,0 +1,20 @@
+package com.example.cowsbulls;
+
+import android.app.Activity;
+import android.os.Bundle;
+import android.widget.TextView;
+
+public class HighScores extends Activity {
+	@Override
+	public void onCreate(Bundle savedBundleInstance){
+		setContentView(R.layout.high_scores);
+		
+		TextView title = (TextView) findViewById(R.id.hs_title);
+		TextView trials = (TextView) findViewById(R.id.hs_trial);
+		TextView time = (TextView) findViewById(R.id.hs_time);
+		
+		title.setText("Scores To Beat");
+		trials = setText(MainActivity.highScoreTrials);
+		time = setText(MainActivity.highScoreTime);
+	}
+}
