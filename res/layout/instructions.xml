@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    >
+    
+    <TextView
+        android:id="@+id/instruction_text"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="INSTRUCTIONS"
+        android:textColor="#ffffff"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        android:shadowDx="2"
+       	android:shadowDy="2"
+ 	/>
+    
+    <ImageView
+	    android:id="@+id/instructionImage1"
+	    android:layout_width="fill_parent"
+	    android:layout_height="400dp"
+	    android:layout_gravity="center"
+	    android:layout_margin="10dp"
+	    android:src="@drawable/instruction1"
+	 />
+    
+    <!-- Button
+   	    android:id="@+id/next1"
+   	    android:layout_width="100dp"
+   	    android:layout_height="20dp"
+   	    android:layout_gravity="center"
+   	    android:text="Next"
+   	    android:textColor="#ffffff"
+   	    android:textStyle="bold"
+   	    android:textSize="14sp"
+   	    android:shadowDx="2"
+       	android:shadowDy="2"
+   	    android:background="#1A0000"
+   	    /-->
+
+</LinearLayout>

@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/gameLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingRight="10dp"
+    android:paddingLeft="10dp"
+    android:paddingTop="5dp"
+    android:paddingBottom="5dp"
+    android:gravity="center"
+    android:background="#E79A53"
+    android:orientation="vertical" >
+    
+    <!-- TextView
+        android:id="@+id/gameTextInput"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:gravity="center"
+        android:textColor="#DE8F70"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:background="@drawable/border"/-->
+        
+    <LinearLayout 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        
+        <TextView
+        android:id="@+id/gameInput1"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="3dp"
+        android:gravity="center"
+        android:text=" "
+        android:textColor="#DE8F70"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:background="@drawable/border"/>
+        
+        <TextView
+        android:id="@+id/gameInput2"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="3dp"
+        android:gravity="center"
+        android:text=" "
+        android:textColor="#DE8F70"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:background="@drawable/border"/>
+        
+        <TextView
+        android:id="@+id/gameInput3"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="3dp"
+        android:gravity="center"
+        android:text=" "
+        android:textColor="#DE8F70"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:background="@drawable/border"/>
+        
+        <TextView
+        android:id="@+id/gameInput4"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:text=" "
+        android:textColor="#DE8F70"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:background="@drawable/border"/>
+        
+    </LinearLayout>
+    
+    <!-- com.example.cowsbulls.myTextView
+        android:id="@+id/trialTest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:layout_below="@+id/gameTextInput"/-->
+	    
+    <TextView
+        android:id="@+id/gameTextLogsTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:textColor="#e5bfb4"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:text="Guess Log"
+        android:shadowColor="#400000"
+        android:shadowRadius="2"
+        android:shadowDx="1"
+        android:shadowDy="1"
+        android:background="#400000"/>
+    
+    <View
+        android:id="@+id/underline"
+        android:layout_below="@+id/underline"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:paddingTop="1dp"
+        android:alpha="20"
+        android:background="#000000"/>
+    
+    <TextView
+        android:id="@+id/gameTextLogs"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginBottom="5dp"
+        android:paddingTop="4dp"
+        android:gravity="center"
+        android:textColor="#D49583"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:shadowColor="#400000"
+        android:shadowRadius="2"
+        android:shadowDx="3"
+        android:shadowDy="4"
+        android:scrollbars="vertical"
+        android:scrollbarStyle="insideInset"
+        android:scrollbarSize="5dp"
+        android:scrollbarAlwaysDrawVerticalTrack="true"
+        android:background="@drawable/text_log"/>
+
+    <GridLayout
+        android:id="@+id/gridLayoutView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="5dp"
+        android:columnCount="3"
+        android:rowCount="4"
+        android:orientation="horizontal">
+                
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1" 
+            android:textColor="#efe9e9"
+            android:textSize="22sp"
+            android:background="@drawable/button_border"
+            />
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2"
+            android:textSize="22sp"
+            android:textColor="#efe9e9"
+            android:background="@drawable/button_border" />
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3"
+            android:textSize="22sp"
+            android:textColor="#efe9e9"
+            android:background="@drawable/button_border" />
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4"
+            android:textSize="22sp"
+            android:textColor="#efe9e9"
+            android:background="@drawable/button_border" />
+        <Button
+            android:id="@+id/button5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5"
+            android:textSize="22sp"
+            android:textColor="#efe9e9"
+            android:background="@drawable/button_border" />
+        <Button
+            android:id="@+id/button6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="6"
+            android:textSize="22sp"
+            android:textColor="#efe9e9"
+            android:background="@drawable/button_border" />
+        <Button
+            android:id="@+id/button7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="7"
+            android:textSize="22sp"
+            android:textColor="#efe9e9"
+            android:background="@drawable/button_border" />
+        <Button
+            android:id="@+id/button8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="8"
+            android:textSize="22sp"
+            android:textColor="#efe9e9"
+            android:background="@drawable/button_border" />
+        <Button
+            android:id="@+id/button9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="9"
+            android:textSize="22sp"
+            android:textColor="#efe9e9"
+            android:background="@drawable/button_border" />
+        <Button
+            android:id="@+id/buttonDel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Del"
+            android:textSize="22sp"
+            android:textColor="#efe9e9"
+            android:background="@drawable/button_border" />
+        <Button
+            android:id="@+id/button0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textSize="22sp"
+            android:textColor="#efe9e9"
+            android:background="@drawable/button_border"
+            android:layout_column="1" />
+        <Button
+            android:id="@+id/buttonEnter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enter"
+            android:textSize="22sp"
+            android:textColor="#efe9e9"
+            android:background="@drawable/button_border" />
+    </GridLayout>
+    
+    <Button 
+        android:id="@+id/passButton"
+        android:layout_width="140dp"
+        android:layout_height="30dp"
+        android:background="#400000"
+        android:text="Quit"
+        android:textColor="#ffffff"
+        android:fontFamily="sans-serif"
+        android:shadowDx="3"/>
+	    
+</LinearLayout>

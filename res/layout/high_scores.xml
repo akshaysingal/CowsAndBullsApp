@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#450804"
+    android:padding="5dp" >
+    
+    <TextView 
+        android:id="@+id/hs_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="35sp"
+        android:textColor="#c4c4c4"
+        android:shadowColor="#000000"
+        android:shadowDx="4"
+        android:shadowDy="2"
+        android:shadowRadius="3"/>
+    
+    <View
+        android:id="@+id/borderLine"
+        android:layout_below="@+id/hs_title"
+        android:layout_marginTop="1dp"
+        android:layout_width="match_parent"
+        android:layout_height="3.5dp"
+        android:alpha="20"
+        android:background="#c4c4c4"/>
+    
+    <TextView 
+        android:id="@+id/hs_score"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginTop="7dp"
+        android:textSize="17sp"
+        android:textColor="#c4c4c4"
+        android:shadowColor="#000000"
+        android:shadowDx="2"
+        android:shadowDy="2"
+        android:shadowRadius="2"/>
+    
+    <!-- TextView 
+        android:id="@+id/hs_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textSize="17sp"
+        android:textColor="#c4c4c4"
+        android:shadowColor="#000000"
+        android:shadowDx="2"
+        android:shadowDy="2"
+        android:shadowRadius="2"/-->
+    
+
+</LinearLayout>
